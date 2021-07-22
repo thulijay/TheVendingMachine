@@ -11,33 +11,33 @@ public class OverloadedVendingMachine {
     }
 
     void buy(SoftDrink softDrink) {
-        --softDrinks;
+        softDrinks -= 1;
     }
 
     void buy(SaltySnack saltySnack) {
-        --saltySnacks;
+        saltySnacks -= 1;
     }
 
     void buy(Chocolate chocolate) {
-        --chocolates;
+        chocolates -= 1;
     }
 
     void buy(Product product) {
-        --softDrinks;
-        --saltySnacks;
-        --chocolates;
+        softDrinks -= 1;
+        saltySnacks -= 1;
+        saltySnacks -= 1;
     }
 
     void addStock(SoftDrink softDrink){
-        ++softDrinks;
+        softDrinks += 1;
     }
 
     void addStock(SaltySnack saltySnack){
-        ++saltySnacks;
+        saltySnacks += 1;
     }
 
     void addStock(Chocolate chocolate){
-        ++chocolates;
+        chocolates += 1;
     }
 
     void addStock(Product product){
