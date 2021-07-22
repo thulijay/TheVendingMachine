@@ -59,6 +59,10 @@ public class OverloadedVendingMachine {
     }
 
     int getStock(Product product){
+        softDrinks += 3;
+        saltySnacks += 3;
+        chocolates += 3;
+
         return softDrinks + saltySnacks + chocolates;
     }
 }
