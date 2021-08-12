@@ -2,67 +2,74 @@ package vending;
 
 import vending.products.*;
 public class OverloadedVendingMachine {
-    int softDrinks, saltySnacks, chocolates;
+    int softDrinks, saltySnacks, chocolates, total;
 
-    OverloadedVendingMachine(int softDrinkQty, int saltySnacksQty, int chocolateQty) {
+    public OverloadedVendingMachine(int softDrinkQty, int saltySnacksQty, int chocolateQty) {
         softDrinks = softDrinkQty;
         saltySnacks = saltySnacksQty;
         chocolates = chocolateQty;
     }
 
-    void buy(SoftDrink softDrink) {
+    public   void buy(SoftDrink softDrink) {
         softDrinks -= 1;
     }
 
-    void buy(SaltySnack saltySnack) {
+    public void buy(SaltySnack saltySnack) {
         saltySnacks -= 1;
     }
 
-    void buy(Chocolate chocolate) {
+    public void buy(Chocolate chocolate) {
         chocolates -= 1;
     }
 
-    void buy(Product product) {
+    public  void buy(Product product) {
         softDrinks -= 1;
         saltySnacks -= 1;
         saltySnacks -= 1;
     }
 
-    void addStock(SoftDrink softDrink){
+    public  void addStock(SoftDrink softDrink){
         softDrinks += 1;
     }
 
-    void addStock(SaltySnack saltySnack){
+    public  void addStock(SaltySnack saltySnack){
         saltySnacks += 1;
     }
 
-    void addStock(Chocolate chocolate){
+    public void addStock(Chocolate chocolate){
         chocolates += 1;
     }
 
-    void addStock(Product product){
+    public  void addStock(Product product){
         softDrinks += 3;
         saltySnacks += 3;
         chocolates += 3;
     }
 
-    int getStock(SoftDrink softDrink){
+    public   int getStock(SoftDrink softDrink){
         return softDrinks;
     }
 
-    int getStock(SaltySnack saltySnack){
+    public  int getStock(SaltySnack saltySnack){
         return saltySnacks;
     }
 
-    int getStock(Chocolate chocolate){
+    public  int getStock(Chocolate chocolate){
         return chocolates;
     }
 
-    int getStock(Product product){
+    public  int getStock(Product product){
         softDrinks += 3;
         saltySnacks += 3;
         chocolates += 3;
 
-        return softDrinks + saltySnacks + chocolates;
+        total =  softDrinks + saltySnacks + chocolates;
+
+        return total;
+    }
+
+    public static void Main(String ...args){
+        OverloadedVendingMachine overloaded = new OverloadedVendingMachine(5, 7, 10);
+
     }
 }

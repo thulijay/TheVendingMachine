@@ -1,0 +1,5 @@
+package vending;
+
+class ExceptionalVendingMachine{
+
+}
