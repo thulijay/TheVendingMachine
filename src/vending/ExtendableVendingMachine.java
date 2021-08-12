@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package vending;
 
 import vending.products.*;
@@ -166,3 +167,7 @@ public class ExtendableVendingMachine {
 }
 
 
+=======
+package vending;public class ExtendableVendingMachine {
+}
+>>>>>>> 87c00d3485de60ea59212f8392557e1590d838aa
