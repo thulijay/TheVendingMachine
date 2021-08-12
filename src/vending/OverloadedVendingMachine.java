@@ -10,6 +10,8 @@ public class OverloadedVendingMachine {
         chocolates = chocolateQty;
     }
 
+    //***************************************************************************************************************************
+
     public   void buy(SoftDrink softDrink) {
         softDrinks -= 1;
     }
@@ -28,6 +30,9 @@ public class OverloadedVendingMachine {
         saltySnacks -= 1;
     }
 
+    //***************************************************************************************************************************
+
+
     public  void addStock(SoftDrink softDrink){
         softDrinks += 1;
     }
@@ -45,6 +50,9 @@ public class OverloadedVendingMachine {
         saltySnacks += 3;
         chocolates += 3;
     }
+
+    //***************************************************************************************************************************
+
 
     public   int getStock(SoftDrink softDrink){
         return softDrinks;

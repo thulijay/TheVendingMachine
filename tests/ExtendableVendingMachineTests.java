@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import vending.ExtendableVendingMachine;
@@ -90,7 +89,3 @@ public class ExtendableVendingMachineTests {
 
     }
 }
-=======
-package PACKAGE_NAME;public class ExtendableVendingMachine {
-}
->>>>>>> 87c00d3485de60ea59212f8392557e1590d838aa

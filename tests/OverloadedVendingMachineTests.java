@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import vending.ExtendableVendingMachine;
@@ -87,7 +86,3 @@ public class OverloadedVendingMachineTests {
 
         assertEquals(overloaded.getStock(new SoftDrink()),3);
     }
-=======
-package PACKAGE_NAME;public class OverloadedVendingMachineTests {
->>>>>>> 87c00d3485de60ea59212f8392557e1590d838aa
-}
