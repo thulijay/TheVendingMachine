@@ -135,39 +135,3 @@ public class ExtendableVendingMachine {
             softDrinks = softDrinks - qty;
         }
     }
-
-//********************************************************************************************
-
-//    public void addStock(Product product, int qty) {
-//        if (product instanceof Chocolate) {
-//            chocolates = chocolates + qty;
-//            System.out.println(chocolates + " chocolates has been added to stock!");
-//        }
-//
-//        if (product instanceof SaltySnack) {
-//            saltySnacks = saltySnacks + qty;
-//            System.out.println(saltySnacks + " chocolates has been added to stock!");
-//
-//        }
-//
-//        if (product instanceof SoftDrink) {
-//            softDrinks = softDrinks + qty;
-//            System.out.println(softDrinks + " chocolates has been added to stock!");
-//
-//        }
-//
-//        if (product instanceof Sweet) {
-//            sweets = sweets + qty;
-//            System.out.println(sweets + " chocolates has been added to stock!");
-//
-//        }
-//
-//
-//    }
-}
-
-
-=======
-package vending;public class ExtendableVendingMachine {
-}
->>>>>>> 87c00d3485de60ea59212f8392557e1590d838aa
